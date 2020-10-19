@@ -2,6 +2,8 @@ import React from "react"
 
 async function fetchText() {
   let response = await fetch("/api/1")
+    .then(response => response.text())
+    .then(data => console.log(data))
 
   console.log(response.status) // 200
   console.log(response.statusText) // OK
