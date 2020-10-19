@@ -7,7 +7,7 @@ async function fetchText() {
   console.log(response.statusText) // OK
 
   if (response.status === 200) {
-    return await response.text()
+    console.log(response.text())
     // handle data
   }
 }
@@ -18,7 +18,7 @@ export default function Home() {
       <div>Hello world from frontend homepage!</div>
       <button
         onClick={() => {
-          console.log(await fetchText())
+          fetchText()
         }}
       >
         Fetch from api
