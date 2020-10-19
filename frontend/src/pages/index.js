@@ -18,7 +18,7 @@ export default function Home() {
       <div>Hello world from frontend homepage!</div>
       <button
         onClick={() => {
-          console.log(fetchText())
+          console.log(await fetchText())
         }}
       >
         Fetch from api
