@@ -6,14 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd ./backend && npm run start",
-		"setup-backend": "cd ./backend && npm install && npm run build",
-		"setup-frontend": "cd ./frontend && npm install && npm run build",
-		"build": "npm run setup-backend && npm run setup-frontend"
+    "setup-backend": "cd ./backend && npm install && npm run build",
+    "setup-frontend": "cd ./frontend && npm install && npm run build",
+    "build": "npm run setup-backend && npm run setup-frontend"
   },
   "engines": {
-		"node": "14.x"
-	},
+    "node": "14.x"
+  },
   "author": "Richard Slettevoll",
   "license": "ISC"
- 
 }
